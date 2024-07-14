@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FCC Survey Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <section>
+    <h1 id="title">Practice Survey Form</h1>
+    <p id="description">A practice survey form for freeCodeCamp Responsive Web Design.</p>
+  </section>
+  <section>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label">Name:</label>
+        <input id="name" type="text" placeholder="Enter your name" required>
+      </fieldset>
+      <fieldset>
+        <label id="email-label">Email:</label>
+        <input id="email" type="email" placeholder="Enter your email" required>
+      </fieldset>
+      <fieldset>
+        <label id="number-label">Number:</label>
+        <input id="number" type="number" min="8" max="888" placeholder="Enter a number">
+      </fieldset>
+      <fieldset>
+        <label>Select Gender:</label>
+        <select id="dropdown">
+          <option value="female">Female</option>
+          <option value="male">Male</option>
+          <option value="others">Others</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <p>Select Course:</p>
+        <p>
+          <input id="cs" type="radio" name="courses" value="cs">
+          <label for="cs">CS</label>
+        </p>
+        <p>
+          <input id="it" type="radio" name="courses" value="cs">
+          <label for="it">IT</label>
+        </p>
+        <p>
+          <input id="ce" type="radio" name="courses" value="cs">
+          <label for="ce">CE</label>
+        </p>
+      </fieldset>
+      <fieldset>
+        <p>Select a class that you want to be a part of.</p>
+        <p><input type="checkbox" value="java"> Java Programming </p>
+        <p><input type="checkbox" value="python"> Python Programming </p>
+        <p><input type="checkbox" value="backend"> Backend Workshop </p>
+        <p><input type="checkbox" value="frontend"> Frontend Workshop </p>
+        <p><input type="checkbox" value="cybersecurity"> Cybersecurity Fundamentals </p>
+        <p><input type="checkbox" value="networking"> Networking Fundamentals </p>
+      </fieldset>
+      <fieldset>
+        <p>Suggestions</p>
+        <textarea> Type any additional comments that you have. </textarea>
+      </fieldset>
+      <fieldset>
+        <button id="submit">Submit</button>
+      </fieldset>
+    </form>
+  </section>
+</body>
+</html>
