@@ -1,7 +1,7 @@
 # Full Stack Journey
 
 ## Responsive Web Design
-[X] Survey Form
+- [X] Survey Form
 - [ ] Tribute Page
 - [ ] Technical Documentation Page
 - [ ] Product Landing Page
