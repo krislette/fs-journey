@@ -4,7 +4,7 @@
 - [X] Survey Form
 - [X] Tribute Page
 - [X] Technical Documentation Page
-- [ ] Product Landing Page
+- [X] Product Landing Page
 - [ ] Personal Portfolio Webpage
 
 ## JavaScript Algorithm and Data Structures
