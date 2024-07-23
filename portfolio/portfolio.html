@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FCC: Personal Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="./assets/icon.ico" rel="icon">
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Inconsolata:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <section>
+    <nav id="navbar">
+      <ul>
+        <li><a href="#">Krislette.</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </nav>
+  </section>
+
+  <!-- Home page -->
+  <section id="welcome-section">
+    <div id="introduction">
+      <h1>Harro! I am Acelle!</h1>
+      <p>An aspiring software engineer</p>
+    </div>
+    <svg id="light-wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="rgba(255, 255, 255, 0.5)" fill-opacity="1" d="M0,288L48,272C96,256,192,224,288,202.7C384,181,480,171,576,186.7C672,203,768,245,864,229.3C960,213,1056,139,1152,112C1248,85,1344,107,1392,117.3L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+    </svg>
+    <svg id="lighter-wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="rgba(255, 255, 255, 0.5)" fill-opacity="1" d="M0,288L48,272C96,256,192,224,288,202.7C384,181,480,171,576,186.7C672,203,768,245,864,229.3C960,213,1056,139,1152,112C1248,85,1344,107,1392,117.3L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+    </svg>
+    <svg id="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#fff" fill-opacity="1" d="M0,288L48,272C96,256,192,224,288,202.7C384,181,480,171,576,186.7C672,203,768,245,864,229.3C960,213,1056,139,1152,112C1248,85,1344,107,1392,117.3L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+    </svg>
+  </section>
+
+  <!-- Projects page -->
+  <section id="projects">
+    <div class="headline">
+      <h1>Projects</h1>
+      <p>See my recent works!</p>
+    </div>
+    <div class="project-container">
+      <div class="project-tile">
+        <img src="./assets/stall.png" alt="PUPStols">
+        <div class="project-content">
+          <p class="caption">An RDBMS web app for the stall owners of Polytechnic University of the Philippines built on ReactJS, NodeJS, and Bootstrap.</p>
+          <a href="https://github.com/krislette/pupstols" target="_blank">View Project</a>
+        </div>
+      </div>
+      <div class="project-tile">
+        <img src="./assets/jeff.png" alt="NaviJeff">
+        <div class="project-content">
+          <p class="caption">A desktop application for showing the most efficient jeepney routes within Northern Metro Manila, made with JavaFX.</p>
+          <a href="https://github.com/krislette/navijeff" target="_blank">View Project</a>
+        </div>
+      </div>
+      <div class="project-tile">
+        <img src="./assets/toolkit.png" alt="DSA Toolkit">
+        <div class="project-content">
+          <p class="caption">An interactive desktop app utilizing Java Swing for hands-on experience with five different data structures. This is for my DAA class.</p>
+          <a href="https://github.com/krislette/data-structures-toolkit" target="_blank">View Project</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacts page -->
+  <section id="contact">
+    <div class="headline">
+      <h1>Let's work together!</h1>
+      <p>How do you take your coffee?</p>
+    </div>
+    <div id="social-links">
+      <span class="social-link">
+        <a href="https://www.facebook.com/acellerate" target="_blank">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAAAXNSR0IArs4c6QAAAP5JREFUOE/t1T8rxVEcx/HXHWRRtquIRambic3ELO4stww2050snoDJI5BJkZXNxDOQImRhIDwD0z2/+t3S6bqd39Fvc8bT+b6/n+/f01DDadTAFEMXMJ7p6A5fhe1P6DKuMoGF2QNaMXQd53+AvmMyhq7hIgH6hEPc4hu7WMVbuJ/KUfqM+RLW93+EbWQr3cN+SdvBBNooCjxQaUr4WzhGEx9RqrLD7+AEM3iJoJXD75aFucdnSMEolkroQeiaxZxCreD6l854DOrncgo1TOklRnKU9kVWzmnKRP1Dq/XpLG4wNmSpbOIU02HeX6N3Z2H9bcQLJWFBpT2p5TvpAew5RRbm8TskAAAAAElFTkSuQmCC" alt="Facebook"/>
+          Facebook
+        </a>
+      </span>
+      <span class="social-link">
+        <a href="https://github.com/krislette" target="_blank">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAAAXNSR0IArs4c6QAAAfhJREFUOE+11UmoTnEYx/HPjTKUIYmMC0MsLSyUKclCSlaKBVGGm5CdWN2FrExlcUnCQslCUlbKEGXISpEyy5CSKZT5PHpOHefe+75n49m87zn/3/P9/5/pfzr8B+toyByGafiIh/jeyq8VdDy2YBmmViA/cAWncBTx/I/1Bd2JLvRrE8kTLMHdqq436G5sb5iWkH3AXNwpferQTTiYi3uwAmP72OAiPmEp3mAGXoW2Ch2HBxiIR5iM/lib0KcYggm4iWuYj0u5fgKr69C9RSjbUvAOIxqkIIp4JnW/c8MX1ZO+xJgUnM2qt+NGau5haAo70V1ChyNOV1ok/mo7Yq4fxrr8fwxrSuikbOqSMxHPG0J3YFdqI78LSmiEHeGXNgs3GkK7i6pvSO2FooCLSmg0eYzg4FyMttrcABq5jLEdmdrYoLNaqChO9FzYTywsQrncAjyg6OHI56qKJvzPVaGLcR7Rb1G4EJzE7RyIb+k8HQcQv5H70h5jCn7VJypONg8z03F2NvmcinNcNL0VcTlOh64OjZ1vZdgrEdD7eF1Lw9ecvPL1oUKzsXzo7UKJsOLEz3A9R3ZfDfoFg/LdkaJz1iMm6q/1dfWNLvK6v7jSIqTohK016Ge8R/To8Xox2938o7IT3tYc4ysQl090SQ9rB23Qqj0lfwASh1wWgl1aiwAAAABJRU5ErkJggg==" alt="GitHub"/>
+          GitHub
+        </a>
+      </span>
+      <span class="social-link">
+        <a href="https://www.linkedin.com/in/krislette/" target="_blank">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAAAXNSR0IArs4c6QAAAVNJREFUOE/V1bFLlWEUx/HPVdpEcRFKRUkdBBfBNWwU091BnEPBv8AyazYIimZHB5cKWg2MHHUQXBy10NFAdMieA4/w9qq3y/XewXc953zPe875nfNUNOGrNIGpDB1FR52J9nASsUXoODbrBEbYPobL0Gl8ugP0Jx6VoVP4nKET2MZ7zNaY6Ajdt0HP0YkzzONDI6DB2MAXvEZvo6A/cIE+9ONbBo9gF98xhEm0Z1vV8sPnIX5hCW8KKnmCLVxmUEw7kjzAIXqqDeoK+iK3oKUAepx6fYzfGfw1DTUGW/OflqFzWMMBBjP0HRbvAg2JLWRYV96gFby8DVoUf4g4xLycAK9SX1tT4B98TL1+nqGhySg57OF3o/jvD7S4pqt5unFknmYFhIyepaUYy+W/xWm2h99/y69xif5xuxE6gB201UNMZ289nb+ZsvjrZF0Pa8pz8hflRV0Wx0UQuwAAAABJRU5ErkJggg==" alt="LinkedIn"/>
+          LinkedIn
+        </a>
+      </span>
+      <span class="social-link">
+        <a href="mailto: acellekrislette@gmail.com" target="_blank">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAAAXNSR0IArs4c6QAAATtJREFUOE+11D8oR1EUwPHPLwZFKX9KRmUy+lktTAYyicKuKINBilIGZWMhg0GxMhuUWJBCmSkMFslm4N28V49++Hm8W69Xr3O+53vvOe8W5LAKOTDlDm3CIGoz2l9iBy+JaXg/oD4jMEmbw3wCbUOo9IyaDOAk7wCdCbQdJ1jFfmS8jIYy4SF+BDc4RTGBFnGMTQyjMS7Q/w34CVNYQ3W8yw/QxDQwNjAeB/ViPS6S5u9hFHfowDZaPpumoSH5GkM4Ql10FCvxZDxiMi5cidCYaVTEFUtuP23zGjVtKRqRmTAm6MEZ7tGKLQSZ9PoRmgRfYCB6ruIPE1hEVYnzLhsacoPpLLrQ/U3zfgUtc7pKj1S5yV/F5W/ajNu/amI3mpC+9NW3gNDZLP9+8DnHGA5zv0//YffviFxM3wB4YkIWOPRsBgAAAABJRU5ErkJggg==" alt="Email"/>
+          Email
+        </a>
+      </span>
+      <span class="social-link">
+        <a href="https://discord.gg/NUtYmWz7" target="_blank">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAAAXNSR0IArs4c6QAAAZFJREFUOE/F1D9IVlEYx/GPYIZLLoGVERlBUNRUIUhB5BY0FSFE4OBULVFDDQUFoYjgYkNr0KC02FwUBakgWNRiQgWt0VRDRXQfOBdOh4vgKy+e5b333Pf3Pc/v+XM6tGF1tIFpU6A96MS3wtE+fMbfJqdNkXbjIkYwgCeYzsRxyBx+pd8HmM/hTdDXGFxnrs/iaa0poecxs05g/H210h3E73gpoR+xvwVoSC7hUQk9joUWgSF7hZMl9CFGC+gX7ERXsR+V39WwfwAruf1P2JuJJ3ED2/AOe9K3saryt9L+B/RlmivRKTU02uhnEc0QnqW9xxhOz2ExrMaaxblMF+11uYYewdsCOoVrKaLlzMU4biIG430R6fPqwNM1NE5/2VCktXIatrcUmiUcraHHsLiBytfSGJwTNbQXb9Cfge9UI3oYZxA5z1c4iDzHGJ/KPtyr7oPbefXDytWUr+34UxXiUJqWaJ/dVTf8wFd8xwSuJ+CL9Bz2G6++rbiQIPfXSMkO3E2XzX9F3pT7tKXatSXSf2oRPxZJI5YfAAAAAElFTkSuQmCC" alt="Discord"/>
+          Discord
+        </a>
+      </span>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <span class="left">This website was created in partial fulfillment of the requirements for FCC certification.</span>
+      <span class="right">Created by <a id="profile-link" href="https://github.com/krislette" target="_blank">Acelle</a> 2024</span>
+    </div>
+  </footer>
+</body>
+</html>

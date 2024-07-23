@@ -1,0 +1,270 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font-family: "Inconsolata", sans-serif;
+}
+
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 1.6rem;
+}
+
+main {
+  display: block;
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #333;
+  color: #fff; 
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+}
+
+li:first-child {
+  float: left;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111111;
+}
+
+#welcome-section {
+  margin-top: 50px;
+  height: calc(100vh - 50px);
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #333;
+  position: relative; 
+  color: #fff;
+}
+
+#introduction {
+  padding-bottom: 110px;
+}
+
+#welcome-section .introduction h1,
+#welcome-section .introduction p {
+  color: #fff;
+}
+
+h1 {
+  font-family: "Karla", sans-serif;
+  font-size: 40px;
+}
+
+#light-wave {
+  position: absolute;
+  bottom: 9px;
+  width: 110%;
+  left: -10%;
+  height: auto;
+  margin-bottom: -1px;
+}
+
+#lighter-wave {
+  position: absolute;
+  bottom: -25px;
+  width: 115%;
+  left: -15%;
+  height: auto;
+  margin-bottom: -1px;
+  opacity: 0.7;
+}
+
+#wave {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  margin-bottom: -1px;
+}
+
+#projects {
+  margin-top: 110px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative; 
+}
+
+.headline {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.caption {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.project-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.project-tile {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-tile:hover {
+  transform: scale(1.01);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.project-tile img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.project-content {
+  padding: 15px;
+}
+
+.project-content .caption {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.project-content a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+}
+
+#contact {
+  margin-top: 110px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+#social-links {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-link a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+.social-link img {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  transition: transform 0.3s ease;
+}
+
+.social-link:hover {
+  transform: scale(1.1);
+}
+
+.social-link:hover a {
+  color: #007bff;
+}
+
+footer {
+  background-color: #333; 
+  color: #fff; 
+  padding: 20px; 
+  width: 100%; 
+}
+
+.footer-content {
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+}
+
+.left {
+  text-align: left; 
+}
+
+.right {
+  text-align: right; 
+}
+
+#profile-link {
+  color: #fff; 
+  text-decoration: none; 
+  font-weight: bold; 
+}
+
+#profile-link:hover {
+  color: #007bff; 
+}
+
+@media (max-width: 768px) {
+  .project-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .project-container {
+    grid-template-columns: 1fr;
+  }
+}
