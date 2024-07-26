@@ -5,13 +5,13 @@
 - [X] Tribute Page
 - [X] Technical Documentation Page
 - [X] Product Landing Page
-- [x] Personal Portfolio Webpage
+- [x] <a href="https://krislette.github.io/fcc-portfolio/">Personal Portfolio Webpage</a>
 
 - Completion Date: July 07, 2024, around 8:09pm
-- Certificate Link: https://www.freecodecamp.org/certification/krislette/responsive-web-design
+- <a href="https://www.freecodecamp.org/certification/krislette/responsive-web-design">Certificate</a>
 
 ## JavaScript Algorithm and Data Structures
-- [ ] Palindrome Checker
+- [X] <a href="https://krislette.github.io/fcc-palchecker/">Palindrome Checker</a>
 - [ ] Roman Numeral Converter
 - [ ] Telephone Number Validator
 - [ ] Cash Register
