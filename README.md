@@ -14,5 +14,5 @@
 - [X] <a href="https://krislette.github.io/fcc-palchecker/">Palindrome Checker</a>
 - [X] <a href="https://krislette.github.io/fcc-romanum/">Roman Numeral Converter</a>
 - [X] <a href="https://krislette.github.io/fcc-telnum/">Telephone Number Validator</a>
-- [ ] Cash Register
+- [X] <a href="https://krislette.github.io/fcc-cashier/">Cash Register</a>
 - [ ] Pokémon Search App
