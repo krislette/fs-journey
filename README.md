@@ -13,6 +13,6 @@
 ## JavaScript Algorithm and Data Structures
 - [X] <a href="https://krislette.github.io/fcc-palchecker/">Palindrome Checker</a>
 - [X] <a href="https://krislette.github.io/fcc-romanum/">Roman Numeral Converter</a>
-- [ ] Telephone Number Validator
+- [X] <a href="https://krislette.github.io/fcc-telnum/">Telephone Number Validator</a>
 - [ ] Cash Register
 - [ ] Pokémon Search App
