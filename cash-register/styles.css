@@ -1,0 +1,150 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: monospace, monospace;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  display: block;
+}
+
+#container {
+  width: 100%;
+  max-width: 725px;
+  padding: 6px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+span {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  line-height: 1.23;
+}
+
+pre {
+  text-align: left;
+  margin: 0;
+  overflow-x: hidden
+}
+
+h3 {
+  font-family: monospace, monospace;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+#content {
+  margin: 10px;
+}
+
+#cash {
+  width: 35%;
+  height: 40px;
+  padding: 10px;
+}
+
+#purchase-btn {
+  width: 110px;
+  height: 40px;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+#output {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+}
+
+#cash-register {
+  flex: 1; 
+  margin-right: 20px; 
+}
+
+#change-due {
+  flex: 1; 
+  border: 1px solid #ccc; 
+  padding: 10px;
+}
+
+#open {
+  color: #008000;
+}
+
+#closed {
+  color: #D30000;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: 1.94vw;
+  }
+
+  #spade {
+    font-size: 4px;
+  }
+
+  #cash {
+    width: 65%;
+  }
+
+  #repo {
+    width: 8px;
+    height: 8px;
+  }
+
+  #github, 
+  #linkedin, 
+  #facebook, 
+  #spotify {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background:#121213;
+    color:#fff
+  }
+
+  .icon {
+    color: #fff;
+  }
+  
+  #spade {
+    filter: invert(1);
+  }
+  
+  #github, 
+  #linkedin, 
+  #facebook, 
+  #spotify {
+    filter: invert(1)
+  }
+}
