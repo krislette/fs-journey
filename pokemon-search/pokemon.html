@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FCC: Pokémon Search</title>
+  <link rel="stylesheet" href="./styles.css">
+  <link href="./icon.ico" rel="icon">
+</head>
+<body>
+  <main>
+    <div id="container">
+      <pre>
+<span><a href="https://krislette.me/" target="_blank" class="icon">
++-------+
+|<span id="spade">♠</span>  /\
+|  /--\</a>            
+<a href="https://krislette.me/" target="_blank" class="icon">| /    \
++-------+</a>
+</span>
+      </pre>
+      <!-- Before I get flamed on this code,
+        I intended to use this <pre> with underscores 
+        as a divider, instead of using <hr>. -->
+      <pre>
+________________________________________________________________________________
+      </pre>
+      <h3>Pokémon Search</h3>
+      <div id="inputs">
+        <input id="search-input" type="text" placeholder="Search for Pokémon Name or ID:" required>
+        <button id="search-button" type="button">Search</button>
+      </div>
+      <div id="poke-display">
+        <div id="poke-profile">
+          <p>
+            <span id="pokemon-name"></span> 
+            <span id="pokemon-id"></span>
+          </p>
+          <p>
+            <span id="weight"></span> <span id="height"></span>
+          </p>
+          <div id="pokemon-image"></div>
+          <div id="types"></div>
+        </div>
+        <div id="poke-stats">
+          <pre>
+.------------------------------------.
+|        <strong>Base</strong>        |     <strong>Stats</strong>     |
++--------------------+---------------+
+|         HP:        |      <span class="stats" id="hp">--</span>       |
++--------------------+---------------+
+|       Attack:      |      <span class="stats" id="attack">--</span>       |
++--------------------+---------------+
+|      Defense:      |      <span class="stats" id="defense">--</span>       |
++--------------------+---------------+
+|     Sp. Attack:    |      <span class="stats" id="special-attack">--</span>       |
++--------------------+---------------+
+|    Sp. Defense:    |      <span class="stats" id="special-defense">--</span>       |
++--------------------+---------------+
+|       Speed:       |      <span class="stats" id="speed">--</span>       |
+'--------------------'---------------'
+          </pre>
+        </div>
+      </div>
+      <pre>
+________________________________________________________________________________
+      </pre>
+      <div id="instructions">
+        <p><strong>Instructions:</strong> Enter the name or ID of the Pokémon you want to find in the input field and click the "Search" button. The app will display the Pokémon's profile, including its name, ID, weight, height, image, and stats.</p>
+      </div>
+      <pre>
+________________________________________________________________________________
+
+Acelle Krislette (C) 2024                                  Kiss (C) Website Idea 
+
+
+                               <a href="https://github.com/krislette" target="_blank"><img id="github" alt="GitHub" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAAAXNSR0IArs4c6QAAAfhJREFUOE+11UmoTnEYx/HPjTKUIYmMC0MsLSyUKclCSlaKBVGGm5CdWN2FrExlcUnCQslCUlbKEGXISpEyy5CSKZT5PHpOHefe+75n49m87zn/3/P9/5/pfzr8B+toyByGafiIh/jeyq8VdDy2YBmmViA/cAWncBTx/I/1Bd2JLvRrE8kTLMHdqq436G5sb5iWkH3AXNwpferQTTiYi3uwAmP72OAiPmEp3mAGXoW2Ch2HBxiIR5iM/lib0KcYggm4iWuYj0u5fgKr69C9RSjbUvAOIxqkIIp4JnW/c8MX1ZO+xJgUnM2qt+NGau5haAo70V1ChyNOV1ok/mo7Yq4fxrr8fwxrSuikbOqSMxHPG0J3YFdqI78LSmiEHeGXNgs3GkK7i6pvSO2FooCLSmg0eYzg4FyMttrcABq5jLEdmdrYoLNaqChO9FzYTywsQrncAjyg6OHI56qKJvzPVaGLcR7Rb1G4EJzE7RyIb+k8HQcQv5H70h5jCn7VJypONg8z03F2NvmcinNcNL0VcTlOh64OjZ1vZdgrEdD7eF1Lw9ecvPL1oUKzsXzo7UKJsOLEz3A9R3ZfDfoFg/LdkaJz1iMm6q/1dfWNLvK6v7jSIqTohK016Ge8R/To8Xox2938o7IT3tYc4ysQl090SQ9rB23Qqj0lfwASh1wWgl1aiwAAAABJRU5ErkJggg=="></a>   <a href="https://www.linkedin.com/in/krislette" target="_blank"><img id="linkedin" alt="LinkedIn" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAAAXNSR0IArs4c6QAAAVNJREFUOE/V1bFLlWEUx/HPVdpEcRFKRUkdBBfBNWwU091BnEPBv8AyazYIimZHB5cKWg2MHHUQXBy10NFAdMieA4/w9qq3y/XewXc953zPe875nfNUNOGrNIGpDB1FR52J9nASsUXoODbrBEbYPobL0Gl8ugP0Jx6VoVP4nKET2MZ7zNaY6Ajdt0HP0YkzzONDI6DB2MAXvEZvo6A/cIE+9ONbBo9gF98xhEm0Z1vV8sPnIX5hCW8KKnmCLVxmUEw7kjzAIXqqDeoK+iK3oKUAepx6fYzfGfw1DTUGW/OflqFzWMMBBjP0HRbvAg2JLWRYV96gFby8DVoUf4g4xLycAK9SX1tT4B98TL1+nqGhySg57OF3o/jvD7S4pqt5unFknmYFhIyepaUYy+W/xWm2h99/y69xif5xuxE6gB201UNMZ289nb+ZsvjrZF0Pa8pz8hflRV0Wx0UQuwAAAABJRU5ErkJggg=="></a>   <a href="https://www.facebook.com/acellerate" target="_blank"><img id="facebook" alt="Facebook" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAAAXNSR0IArs4c6QAAAP5JREFUOE/t1T8rxVEcx/HXHWRRtquIRambic3ELO4stww2050snoDJI5BJkZXNxDOQImRhIDwD0z2/+t3S6bqd39Fvc8bT+b6/n+/f01DDadTAFEMXMJ7p6A5fhe1P6DKuMoGF2QNaMXQd53+AvmMyhq7hIgH6hEPc4hu7WMVbuJ/KUfqM+RLW93+EbWQr3cN+SdvBBNooCjxQaUr4WzhGEx9RqrLD7+AEM3iJoJXD75aFucdnSMEolkroQeiaxZxCreD6l854DOrncgo1TOklRnKU9kVWzmnKRP1Dq/XpLG4wNmSpbOIU02HeX6N3Z2H9bcQLJWFBpT2p5TvpAew5RRbm8TskAAAAAElFTkSuQmCC"></a>   <a href="https://open.spotify.com/user/31llaqlu4ivsgm4k7jfqetmbaagm?si=ba543bf5753e4a3a" target="_blank"><img id="spotify" alt="Spotify" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAAAXNSR0IArs4c6QAAAfBJREFUOE+11EnoT1EUwPHPHxErQ5F5SilJkZUNGwtDRElRioUSxcLKhoWyUDb+K0VkWlmhyEJJSZQiFIrMNhLib35H9+p63v83LJzN6917zveeucd/kJ4OmSMxHe/xCF9b2bWCTsAOrMKUAvINV3AaR5oe6A+6C3swsE0kT7EUt0u9JugBbO8wLaH2DgtxK9vUoQELaLfyCvPwIgxL6EQ8wJCC+BnPk/IPDMVcDGp49WRlv64O7cUWPMSG9H3TYDwMC7AYKzCj0ImCPik9fYbxuImdmISpmJbOo2ifcB9XcTG12LLUBaOwFb0ZOhqva15F69xAX3Eej8RjIV9wsPo/XHl7AnMqB45FlBk6E/cK473Yhw8N4c9OYa/FrNr9ZSzK0HGpIFnnWgpzJYYXhtdxNqXoAtYkLzPnfPRt/olqfsTgAvA2dUPkMUvOc/zfwXFEVHlIIh3bykKdw5JkfaaaktVVASanYn1POY/2GoFN2IyxtfCXRyQlNHJ0KikF5C4if3WJud9fORCpeFlcxgBES/XVJyoU53c7Tkl/fcrvXxMVd7lPx3QJjsGJHv0tTQslJiRaIzqiEzmU8vuzFTTuAhirbyMG9EN+XJ3vrgp5tH7fbvPHxo/5jg0U4xprLgp4CdHLf7wrwe2gnYT/j84vhl9gFrs300QAAAAASUVORK5CYII="></a>     
+        </pre>
+      </pre>
+    </div>
+  </main>
+  <script src="./script.js"></script>
+</body>
+</html>

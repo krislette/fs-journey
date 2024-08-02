@@ -1,0 +1,282 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: monospace, monospace;
+}
+
+:root {
+  --color-normal: #A8A77A;
+  --color-fire: #EE8130;
+  --color-water: #6390F0;
+  --color-electric: #F7D02C;
+  --color-grass: #7AC74C;
+  --color-ice: #96D9D6;
+  --color-fighting: #C22E28;
+  --color-poison: #A33EA1;
+  --color-ground: #E2BF65;
+  --color-flying: #A98FF3;
+  --color-psychic: #F95587;
+  --color-bug: #A6B91A;
+  --color-rock: #B6A136;
+  --color-ghost: #735797;
+  --color-dragon: #6F35FC;
+  --color-dark: #705746;
+  --color-steel: #B7B7CE;
+  --color-fairy: #D685AD;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  display: block;
+}
+
+#container {
+  width: 100%;
+  max-width: 725px;
+  padding: 6px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+span {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  line-height: 1.23;
+}
+
+pre {
+  text-align: left;
+  margin: 0;
+  overflow-x: hidden
+}
+
+h3 {
+  font-family: monospace, monospace;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+#inputs {
+  margin: 10px;
+}
+
+#search-input {
+  width: 60%;
+  height: 40px;
+  padding: 10px;
+}
+
+#search-button {
+  width: 110px;
+  height: 40px;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+#poke-display {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  max-width:80ch;
+}
+
+#poke-profile {
+  flex: 1;
+  margin-right: 20px;
+  position: relative;
+  top: -7px;
+  height: 270px;
+  border: 1px dashed;
+}
+
+#pokemon-name, #pokemon-id {
+  font-size: larger;
+  padding-top: 9px;
+}
+
+#sprite {
+  width: 160px;
+}
+
+.poke-type {
+  border: none;
+  color: #000;
+  padding: 8px 16px;
+  font-size: 14px;
+  border-radius: 5px;
+  margin: 2px;
+}
+
+.poke-type.normal {
+  background-color: var(--color-normal);
+}
+
+.poke-type.fire {
+  background-color: var(--color-fire);
+}
+
+.poke-type.water {
+  background-color: var(--color-water);
+}
+
+.poke-type.electric {
+  background-color: var(--color-electric);
+}
+
+.poke-type.grass {
+  background-color: var(--color-grass);
+}
+
+.poke-type.ice {
+  background-color: var(--color-ice);
+}
+
+.poke-type.fighting {
+  background-color: var(--color-fighting);
+}
+
+.poke-type.poison {
+  background-color: var(--color-poison);
+}
+
+.poke-type.ground {
+  background-color: var(--color-ground);
+}
+
+.poke-type.flying {
+  background-color: var(--color-flying);
+}
+
+.poke-type.psychic {
+  background-color: var(--color-psychic);
+}
+
+.poke-type.bug {
+  background-color: var(--color-bug);
+}
+
+.poke-type.rock {
+  background-color: var(--color-rock);
+}
+
+.poke-type.ghost {
+  background-color: var(--color-ghost);
+}
+
+.poke-type.dragon {
+  background-color: var(--color-dragon);
+}
+
+.poke-type.dark {
+  background-color: var(--color-dark);
+}
+
+.poke-type.steel {
+  background-color: var(--color-steel);
+}
+
+.poke-type.fairy {
+  background-color: var(--color-fairy);
+}
+
+#poke-stats {
+  flex: 1;
+  overflow: hidden;
+}
+
+#poke-stats pre {
+  overflow: hidden; 
+}
+
+.stats {
+  width: 2ch;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: 1.94vw;
+  }
+
+  #spade {
+    font-size: 4px;
+  }
+
+  #github, 
+  #linkedin, 
+  #facebook, 
+  #spotify {
+    width: 10px;
+    height: 10px;
+  }
+
+  #poke-profile {
+    margin-right: 10px; 
+    top: -1; 
+    height: 130px; 
+    border: 1px dashed; 
+  }
+
+  #pokemon-name, #pokemon-id {
+    font-size: larger;
+    padding-top: 9px;
+  }
+  
+  #sprite {
+    width: 63px;
+  }
+  
+  .poke-type {
+    border: none;
+    color: #000;
+    padding: 6px 12px;
+    font-size: 8px;
+    border-radius: 5px;
+    margin: 2px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background:#121213;
+    color:#fff
+  }
+
+  .icon {
+    color: #fff;
+  }
+
+  #spade {
+    filter: invert(1);
+  }
+
+  #github, 
+  #linkedin, 
+  #facebook, 
+  #spotify {
+    filter: invert(1)
+  }
+}
