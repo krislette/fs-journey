@@ -10,16 +10,6 @@ const pokemonImageDiv = document.getElementById("pokemon-image");
 const pokemonTypesDiv = document.getElementById("types");
 const statElements = document.querySelectorAll(".stats");
 
-// Mapping between stat names and their corresponding element IDs
-const statMap = {
-    "hp": "hp",
-    "attack": "attack",
-    "defense": "defense",
-    "special-attack": "special-attack",
-    "special-defense": "special-defense",
-    "speed": "speed"
-};
-
 // Made a helper function to capitalize pokemon types
 const capitalize = string => string[0].toUpperCase() + string.slice(1).toLowerCase();
 
@@ -78,7 +68,7 @@ function displayPokemon(pokemon) {
 async function main() {
     // Fetch the array of pokemons excluding count from API
     const allPokemons = await fetchAllPokemons();
-    const pokemon = searchPokemon(searchInput.value, allPokemons);
+    const pokemon = searchPokemon(searchInput.value.trim(), allPokemons);
     searchInput.focus();
 
     if (!pokemon) {
