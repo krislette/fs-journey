@@ -15,4 +15,7 @@
 - [X] <a href="https://krislette.github.io/fcc-romanum/">Roman Numeral Converter</a>
 - [X] <a href="https://krislette.github.io/fcc-telnum/">Telephone Number Validator</a>
 - [X] <a href="https://krislette.github.io/fcc-cashier/">Cash Register</a>
-- [ ] Pokémon Search App
+- [X] Pokémon Search App
+
+- Completion Date: August 02, 2024, around 9:53pm
+- <a href="https://www.freecodecamp.org/certification/krislette/javascript-algorithms-and-data-structures-v8">Certificate</a>
